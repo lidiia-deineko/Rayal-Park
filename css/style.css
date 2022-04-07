@@ -216,7 +216,7 @@ a {
     .about-item_4 {
       background: url(/images/about_img_4.png); }
     .about-item_5 {
-      background: url(/images/about_img_5.png); }
+      background: url(../images/about_img_5.png); }
     .about-item__title {
       font-family: 'Gelasio', serif;
       font-size: 32px;
