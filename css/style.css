@@ -208,15 +208,15 @@ a {
     border-radius: 10px;
     background-position: center; }
     .about-item_1 {
-      background: url(/images/about_img_1.png); }
+      background: url(../images/about_img_1.png); }
     .about-item_2 {
-      background: url(/images/about_img_2.png); }
+      background: url(../images/about_img_2.png); }
     .about-item_3 {
-      background: url(/images/about_img_3.png); }
+      background: url(../images/about_img_3.png); }
     .about-item_4 {
-      background: url(/images/about_img_4.png); }
+      background: url(../images/about_img_4.png); }
     .about-item_5 {
-      background: url(/images/about_img_5.png); }
+      background: url(../images/about_img_5.png); }
     .about-item__title {
       font-family: 'Gelasio', serif;
       font-size: 32px;
