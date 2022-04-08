@@ -1,3 +1,5 @@
+window.onload = function(){
+
 //выпадающее(jQuery)
 $('.header-btn_media').on('click', function(){
     $('.menu').addClass('active');
@@ -179,7 +181,19 @@ function valid(el, message){
     inp.value = ' '
 }
 
+//стрелка вверх
+let scrollUp = document.querySelector('.scroll-up');
+window.onscroll = () => {
+    if(window.scrollY > 250){
+        scrollUp.classList.remove('scroll-up_hide')
+    } else if (window.scrollY < 450){
+        scrollUp.classList.add('scroll-up_hide')
+    }
+}
 
 
-
+scrollUp.onclick = () => {
+    window.scrollTo(0, 0)
+}
+}
 
