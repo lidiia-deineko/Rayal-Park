@@ -2,7 +2,9 @@ $main-color: #081F32;
 $main-blue: #1B75BB;
 $text-btn: #FFFFFF;
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -42,8 +44,25 @@ a{
     display: none;
 }
 
+
+.scroll-up{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: 1s;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.scroll-up_hide{
+    opacity: 0;
+}
+
 .header{
-    background-image: url(/images/header.png);
+    background-image: url(../images/header.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -153,7 +172,9 @@ a{
             position: absolute;
             bottom: 45px;
             right: 25px;
-            background-color: rgba($color: $main-blue, $alpha: 0.5)
+            background-color: rgba($color: $main-blue, $alpha: 0.5);
+        
+            
         }
         &__btn:hover{
             background-color: rgba($color: $main-blue, $alpha: 1)
