@@ -31,10 +31,10 @@ function getCheckInDate(){
     let localMonth = Number(date.getMonth()+1);
     let localDay = Number(date.getDate());
 
-    if(localMonth.lenght = 1){
+    if(localMonth < 9){
         localMonth = '0'+ localMonth
     }
-    if(localDay.lenght = 1){
+    if(localDay < 9){
         localDay = '0'+ localDay
     }
 
@@ -50,18 +50,18 @@ function getCheckOutDate(){
     let localMonth = Number(date.getMonth()+1);
     let localDay = Number(date.getDate()+1);
 
-    if(localMonth.lenght = 1){
+    if(localMonth < 10){
         localMonth = '0'+ localMonth
     }
-    if(localDay.lenght = 1){
+    if(localDay < 9){
         localDay = '0'+ localDay
     }
 
     let newLocalDate = localYear + '-'+ localMonth + '-' + localDay;
-
-    return newLocalDate;
+    
+    return newLocalDate; 
 }
- 
+
 checkInDate.value = getCheckInDate()
 checkInDate.min = checkInDate.value
 checkOutDate.min = getCheckOutDate()
@@ -191,9 +191,11 @@ window.onscroll = () => {
     }
 }
 
-
 scrollUp.onclick = () => {
     window.scrollTo(0, 0)
 }
+
+
+
 }
 
